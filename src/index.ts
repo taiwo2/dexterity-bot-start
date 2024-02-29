@@ -10,6 +10,7 @@ import { tradeHandler } from "./api-utils/tradeHandler";
 const AppState = new Map<string, any>();
 
 export const app = async () => {
+
   const server = Bun.serve({
     async fetch(req, server) {
       const url = new URL(req.url);
